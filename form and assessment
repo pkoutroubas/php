@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<form>
+    <div>Ονοματεπώνυμο</div>
+    <input type="text" name="n1"/>
+   <div>Βαθμός</div>
+    <input type="number" name="x2"/>
+ 
+    <div><br><input type="submit" value="Aξιολόγηση"></div><br>
+</form>
+
+<?php
+
+
+if (isset($_GET['n1'])&& isset($_GET['x2']) ) {
+    $n1 = $_GET['n1'];
+     $x2 = $_GET['x2'];
+    if ($x2>= 9.5 ){
+    echo "Ο Μαθητής ".$n1. " Προάγεται <br>";}
+    else {
+    echo "Ο Μαθητής ".$n1. " Απορρίπτεται"; }
+   
+
+}
+
+?>
+
+</body>
+</html>
