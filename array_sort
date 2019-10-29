@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$misthos= array("1200", "1550", "1123","786", "876");
+
+ $pl=count($misthos);
+
+echo "To πλήθος των στοιχείων του πίνακα είναι: $pl <br>";
+
+for($i = 0; $i < $pl; $i++) {
+    echo " ο μισθός είναι: ".$misthos[$i]."<br>";
+  echo "<br>";
+}
+
+?>
+
+</body>
+</html>
