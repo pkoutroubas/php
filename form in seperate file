@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<form action="result.php" method="post">
+salary: <input type="text" name="salary"><br>
+
+<input type="submit">
+</form>
+
+</body>
+</html> 
+
+
+<html>
+<body>
+
+ <?php
+ $x =$_POST["salary"];
+if  ($x >1000) {
+echo "Good salary";}
+else {
+echo "poor salary";}  ?><br>
+
+
+</body>
+</html>  
