@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<form>
+    <div>Number 1:</div>
+    <input type="number" name="num1"/>
+
+    <div><br><input type="submit" value="Aξιολόγηση"></div><br>
+</form>
+
+<?php
+if (isset($_GET['num1']) ) {
+    $num1 = $_GET['num1'];
+switch ($num1) {
+case ($num1 > 1000): echo 'Υψηλός Μισθός'; break;
+
+case ($num1 <= 1000 and $num1>0): echo 'Xamilos Μισθός'; break;
+default:
+    echo 'Λάθος Αριθμός';
+  break;
+}
+ 
+}
+?>
+
+</body>
+</html>
