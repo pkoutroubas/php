@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<form>
+    <div>Ποιο έτος ξεκίνησε η επανάσταση τον Ελλήνων κατά των Τούρκων;</div>
+    <input type="number" name="x1"/>
+   <div>Ποιο έτος έγινε η άλωση της Κωνσταντινούπολης;</div>
+    <input type="number" name="x2"/>
+ 
+    <div><br><input type="submit" value="Aξιολόγηση"></div><br>
+</form>
+
+<?php
+$score=0;
+if (isset($_GET['x1'])&& isset($_GET['x2']) ) {
+    $x1 = $_GET['x1'];
+     $x2 = $_GET['x2'];
+    if ($x1== 1821 ){
+    $score++;}
+    else {
+    echo "To έτος της Ελληνικής Επανάστασης ήταν το 1821 <br>"; }
+     if ($x2== 1453 ){
+    $score++;}
+    else {
+    echo "To έτος της άλωσης της Πόλης ήταν το 1453 <br>";}
+  echo "Το τελικό σου σκόρ ήταν ", $score , " σωστές απαντήσεις<br>";
+
+}
+
+?>
+
+</body>
+</html>
