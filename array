@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$bathmoi= array("12", "15", "17","10", "18","12","16","20","11","15");
+
+ $pl=count($bathmoi);
+
+echo "To πλήθος των στοιχείων του πίνακα είναι: $pl <br>";
+echo "Τα στοιχεία του Πίνακα είναι: <br>";
+for($i = 0; $i < $pl; $i++) {
+    echo $bathmoi[$i];
+  echo "<br>";
+}
+
+
+?>
+
+</body>
+</html>
